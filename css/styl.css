@@ -1,11 +1,11 @@
 body {
     text-align: center;
     font-family: 'Roboto', sans-serif;
+    background: black;
 }
 .container {
-    width: 96%;
+    width: 100%;
     margin: auto;
-    max-width: 900px;
 }
 .clearfix:after{
     content: '';
@@ -15,3 +15,387 @@ body {
 a{
     text-decoration: none;
 }
+section.hero header .container{
+    background: cornflowerblue;
+    height: 700px;
+    position: relative;
+    animation-name: evening;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+section.hero header .container .sun{
+    width: 150px;
+    height: 150px;
+    background: yellow;
+    border-radius: 50%;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translate(-50%,0%);
+    animation-name: sun;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+
+}
+section.hero header .container .moon{
+    width: 140px;
+    height: 140px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    box-shadow: 0px 0px 10px 10px white;
+    transform: translate(-50%,100%);
+    animation-name: moon;
+    animation-delay: .7s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+section.hero header .container .but{
+    width: 15px;
+    height: 15px;
+    background: white;
+    box-shadow: 0px 0px 0px white;
+    border-radius: 50%;
+    position: absolute;
+    transition: .5s;
+}
+section.hero header .container .but:hover{
+    width: 30px;
+    height: 30px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    box-shadow: 0px 0px 50px 10px white;
+    transition: .5s;
+}
+section.hero header .container .about{
+    top: 30%;
+    left: 70%;
+    animation-name: stars;
+    animation-delay: .8s;
+    animation-duration: .7s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+section.hero header .container .gallery{
+    top: 20%;
+    left: 7%;
+    animation-name: stars;
+    animation-delay: .9s;
+    animation-duration: .7s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+section.hero header .container .events{
+    top: 70%;
+    left: 25%;
+    animation-name: stars;
+    animation-delay: 1.7s;
+    animation-duration: .7s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+section.hero header .container .contacts{
+    top: 65%;
+    left: 50%;
+    animation-name: stars;
+    animation-delay: 2s;
+    animation-duration: .7s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+section.hero header .container .about .s_stars{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    opacity: 0;
+    transition: .6s;
+}
+section.hero header .container .about:hover .s_stars{
+    opacity: 1;
+    transition: .6s;
+}
+
+section.hero header .container .about .s1{
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: white;
+    position: absolute;
+    top: -30%;
+    left: 45%;
+}
+section.hero header .container .about .s2{
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: white;
+    position: absolute;
+    top: 35%;
+    left: 100%;
+}
+section.hero header .container .about .s3{
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: white;
+    position: absolute;
+    top: 60%;
+    left: 90%;
+}
+section.hero header .container .about .s4{
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: white;
+    position: absolute;
+    top: 100%;
+    left: 120%;
+}
+section.hero header .container .about .s5{
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: white;
+    position: absolute;
+    top: 140%;
+    left: 140%;
+}
+section.hero header .container .about .s6{
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: white;
+    position: absolute;
+    top: 160%;
+    left: 200%;
+}
+
+section.hero header .container .contacts .s_stars{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    transition: .6s;
+    opacity: 0;
+}
+section.hero header .container .contacts:hover .s_stars{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    opacity: 1;
+    transition: .6s;
+}
+section.hero header .container .contacts .s1{
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: white;
+    position: absolute;
+    top: 65%;
+    left: -10%;
+}
+section.hero header .container .contacts .s2{
+     width: 7px;
+     height: 7px;
+     border-radius: 50%;
+     background: white;
+     position: absolute;
+     top: -70%;
+     left: -15%;
+ }
+section.hero header .container .contacts .s3{
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: white;
+    position: absolute;
+    top: 20%;
+    left: 75%;
+}
+section.hero header .container .contacts .s4{
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: white;
+    position: absolute;
+    top: -20%;
+    left: 80%;
+}
+section.hero header .container .contacts .s5{
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: white;
+    position: absolute;
+    top: 60%;
+    left: 80%;
+}
+
+section.hero header .container .events .s_stars{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    transition: .6s;
+    opacity: 0;
+}
+section.hero header .container .events:hover .s_stars{
+    opacity: 1;
+    transition: .6s;
+}
+section.hero header .container .events .s1{
+     width: 7px;
+     height: 7px;
+     border-radius: 50%;
+     background: white;
+     position: absolute;
+     top: 50%;
+     left: 15%;
+ }
+section.hero header .container .events .s2{
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: white;
+    position: absolute;
+    top: 70%;
+    left: 100%;
+}
+section.hero header .container .events .s3{
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: white;
+    position: absolute;
+    top: 70%;
+    left: -40%;
+}
+section.hero header .container .events .s4{
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: white;
+    position: absolute;
+    top: 50%;
+    left: -65%;
+}
+section.hero header .container .events .s5{
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: white;
+    position: absolute;
+    top: -25%;
+    left: 80%;
+}
+section.hero header .container .events .s6{
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: white;
+    position: absolute;
+    top: -40%;
+    left: -45%;
+}
+section.hero header .container .events .s7{
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: white;
+    position: absolute;
+    top: -55%;
+    left: -75%;
+}
+
+
+section.hero header .container .gallery .s_stars{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    transition: .6s;
+    opacity: 0;
+}
+section.hero header .container .gallery:hover .s_stars{
+    opacity: 1;
+    transition: .6s;
+}
+section.hero header .container .gallery .s1{
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: white;
+    position: absolute;
+    top: -45%;
+    left: -20%;
+}
+section.hero header .container .gallery .s2{
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: white;
+    position: absolute;
+    top: -15%;
+    left: 50%;
+}
+section.hero header .container .gallery .s3{
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: white;
+    position: absolute;
+    top: -50%;
+    left: 75%;
+}
+section.hero header .container .gallery .s4{
+     width: 7px;
+     height: 7px;
+     border-radius: 50%;
+     background: white;
+     position: absolute;
+     top: -60%;
+     left: 90%;
+ }
+section.hero header .container .gallery .s5{
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: white;
+    position: absolute;
+    top: 45%;
+    left: -25%;
+}
+section.hero header .container .gallery .s6{
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: white;
+    position: absolute;
+    top: 70%;
+    left: -60%;
+}
+section.hero header .container .gallery .s7{
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: white;
+    position: absolute;
+    top: 40%;
+    left: 35%;
+}
+section.hero header .container .gallery .s8{
+     width: 7px;
+     height: 7px;
+     border-radius: 50%;
+     background: white;
+     position: absolute;
+     top: 100%;
+     left: 80%;
+ }
+@keyframes stars {
+    0%{opacity: 0;
+        box-shadow: 0px 0px 0px white;}
+    100%{opacity: 1;
+        box-shadow: 0px 0px 40px 6px white;}
+}
+
