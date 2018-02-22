@@ -1,0 +1,17 @@
+body {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+.container {
+    width: 96%;
+    margin: auto;
+    max-width: 900px;
+}
+.clearfix:after{
+    content: '';
+    display: table;
+    clear: both;
+}
+a{
+    text-decoration: none;
+}
