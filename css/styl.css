@@ -106,73 +106,148 @@ section.hero header .container .contacts{
     animation-fill-mode: forwards;
     opacity: 0;
 }
+section.hero header .container .s_stars .im{
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: white;
+    position: absolute;
+}
+/*--------------------constellation-------------------*/
 section.hero header .container .about .s_stars{
     width: 200px;
     height: 200px;
     position: relative;
-    opacity: 0;
+    opacity: .5;
     transition: .6s;
 }
 section.hero header .container .about:hover .s_stars{
     opacity: 1;
     transition: .6s;
 }
-
 section.hero header .container .about .s1{
-    width: 7px;
-    height: 7px;
-    border-radius: 50%;
-    background: white;
-    position: absolute;
     top: -30%;
     left: 45%;
 }
-section.hero header .container .about .s2{
-    width: 7px;
-    height: 7px;
-    border-radius: 50%;
+section.hero header .container .about .s1:after{
+    content: '';
+    height: 2px;
+    width: 142px;
     background: white;
     position: absolute;
+    transform: rotate(50deg);
+    top: 66px;
+    left: -13px;
+    opacity: 0;
+}
+section.hero header .container .about:hover .s1:after{
+   opacity: .2;
+}
+section.hero header .container .about .s1:before{
+    content: '';
+    height: 2px;
+    width: 72px;
+    background: white;
+    position: absolute;
+    transform: rotate(137deg);
+    top: 36px;
+    left: -68px;
+    opacity: 0;
+}
+section.hero header .container .about:hover .s1:before{
+    opacity: .2;
+}
+section.hero header .container .about .s2:after{
+    content: '';
+    height: 2px;
+    width: 32px;
+    background: white;
+    position: absolute;
+    transform: rotate(112deg);
+    top: 27px;
+    left: -23px;
+    opacity: 0;
+}
+section.hero header .container .about:hover .s2:after{
+    opacity: .2;
+}
+section.hero header .container .about .s3:before{
+    content: '';
+    height: 2px;
+    width: 165px;
+    background: white;
+    position: absolute;
+    transform: rotate(33deg);
+    top: -50px;
+    left: -160px;
+    opacity: 0;
+}
+section.hero header .container .about:hover .s3:before{
+    opacity: .2;
+}
+section.hero header .container .about .s3:after{
+    content: '';
+    height: 2px;
+    width: 77px;
+    background: white;
+    position: absolute;
+    transform: rotate(53deg);
+    top: 43px;
+    left: -5px;
+    opacity: 0;
+}
+section.hero header .container .about:hover .s3:after{
+    opacity: .2;
+}
+section.hero header .container .about .s4:after{
+    content: '';
+    height: 2px;
+    width: 65px;
+    background: white;
+    position: absolute;
+    transform: rotate(63deg);
+    top: 42px;
+    left: -8px;
+    opacity: 0;
+}
+section.hero header .container .about:hover .s4:after{
+    opacity: .2;
+}
+section.hero header .container .about .s4:before{
+    content: '';
+    height: 2px;
+    width: 102px;
+    background: white;
+    position: absolute;
+    transform: rotate(18deg);
+    top: 103px;
+    left: 52px;
+    opacity: 0;
+}
+section.hero header .container .about:hover .s4:before{
+    opacity: .2;
+}
+section.hero header .container .about .s2{
     top: 35%;
     left: 100%;
 }
 section.hero header .container .about .s3{
-    width: 7px;
-    height: 7px;
-    border-radius: 50%;
-    background: white;
-    position: absolute;
     top: 60%;
     left: 90%;
 }
 section.hero header .container .about .s4{
-    width: 7px;
-    height: 7px;
-    border-radius: 50%;
-    background: white;
-    position: absolute;
     top: 100%;
     left: 120%;
 }
 section.hero header .container .about .s5{
-    width: 7px;
-    height: 7px;
-    border-radius: 50%;
-    background: white;
-    position: absolute;
     top: 140%;
     left: 140%;
 }
 section.hero header .container .about .s6{
-    width: 7px;
-    height: 7px;
-    border-radius: 50%;
-    background: white;
-    position: absolute;
     top: 160%;
     left: 200%;
 }
-
+/*-------------------------*/
 section.hero header .container .contacts .s_stars{
     width: 200px;
     height: 200px;
@@ -188,51 +263,76 @@ section.hero header .container .contacts:hover .s_stars{
     transition: .6s;
 }
 section.hero header .container .contacts .s1{
-    width: 7px;
-    height: 7px;
-    border-radius: 50%;
-    background: white;
-    position: absolute;
     top: 65%;
     left: -10%;
 }
+section.hero header .container .contacts .s1:after{
+    content: '';
+    height: 2px;
+    width: 85px;
+    background: white;
+    position: absolute;
+    transform: rotate(105deg);
+    top: -50px;
+    left: -25px;
+}
 section.hero header .container .contacts .s2{
-     width: 7px;
-     height: 7px;
-     border-radius: 50%;
-     background: white;
-     position: absolute;
      top: -70%;
      left: -15%;
  }
-section.hero header .container .contacts .s3{
-    width: 7px;
-    height: 7px;
-    border-radius: 50%;
+section.hero header .container .contacts .s2:after{
+    content: '';
+    height: 2px;
+    width: 118px;
     background: white;
     position: absolute;
+    transform: rotate(75deg);
+    top: 72px;
+    left:-36px;
+}
+section.hero header .container .contacts .s3:after{
+    content: '';
+    height: 2px;
+    width: 103px;
+    background: white;
+    position: absolute;
+    transform: rotate(11deg);
+    top: -10px;
+    left:-111px;
+}
+section.hero header .container .contacts .s3{
     top: 20%;
     left: 75%;
 }
 section.hero header .container .contacts .s4{
-    width: 7px;
-    height: 7px;
-    border-radius: 50%;
-    background: white;
-    position: absolute;
     top: -20%;
     left: 80%;
 }
-section.hero header .container .contacts .s5{
-    width: 7px;
-    height: 7px;
-    border-radius: 50%;
+section.hero header .container .contacts .s4:after{
+    content: '';
+    height: 2px;
+    width: 57px;
     background: white;
     position: absolute;
+    transform: rotate(97deg);
+    top: 43px;
+    left: -30px;
+}
+section.hero header .container .contacts .s5{
     top: 60%;
     left: 80%;
 }
-
+section.hero header .container .contacts .s5:after{
+    content: '';
+    height: 2px;
+    width: 56px;
+    background: white;
+    position: absolute;
+    transform: rotate(84deg);
+    top: -37px;
+    left: -29px;
+}
+/*------------------------*/
 section.hero header .container .events .s_stars{
     width: 200px;
     height: 200px;
@@ -245,70 +345,104 @@ section.hero header .container .events:hover .s_stars{
     transition: .6s;
 }
 section.hero header .container .events .s1{
-     width: 7px;
-     height: 7px;
-     border-radius: 50%;
-     background: white;
-     position: absolute;
      top: 50%;
      left: 15%;
  }
-section.hero header .container .events .s2{
-    width: 7px;
-    height: 7px;
-    border-radius: 50%;
+section.hero header .container .events .s1:before{
+    content: '';
+    height: 2px;
+    width: 50px;
     background: white;
     position: absolute;
+    transform: rotate(78deg);
+    top: -36px;
+    left: -30px;
+}
+section.hero header .container .events .s2{
     top: 70%;
     left: 100%;
 }
-section.hero header .container .events .s3{
-    width: 7px;
-    height: 7px;
-    border-radius: 50%;
+section.hero header .container .events .s2:before{
+    content: '';
+    height: 2px;
+    width: 144px;
     background: white;
     position: absolute;
+    transform: rotate(13deg);
+    top: -17px;
+    left: -153px;
+}
+section.hero header .container .events .s3{
     top: 70%;
     left: -40%;
 }
-section.hero header .container .events .s4{
-    width: 7px;
-    height: 7px;
-    border-radius: 50%;
+section.hero header .container .events .s3:before{
+    content: '';
+    height: 2px;
+    width: 38px;
     background: white;
     position: absolute;
+    transform: rotate(37deg);
+    top: -17px;
+    left: -39px;
+}
+section.hero header .container .events .s3:after{
+    content: '';
+    height: 2px;
+    width: 90px;
+    background: white;
+    position: absolute;
+    transform: rotate(340deg);
+    top: -15px;
+    left: 13px;
+}
+section.hero header .container .events .s4{
     top: 50%;
     left: -65%;
 }
 section.hero header .container .events .s5{
-    width: 7px;
-    height: 7px;
-    border-radius: 50%;
-    background: white;
-    position: absolute;
     top: -25%;
     left: 80%;
 }
-section.hero header .container .events .s6{
-    width: 7px;
-    height: 7px;
-    border-radius: 50%;
+section.hero header .container .events .s5:before{
+    content: '';
+    height: 2px;
+    width: 117px;
     background: white;
     position: absolute;
+    transform: rotate(337deg);
+    top: 32px;
+    left: -122px;
+}
+section.hero header .container .events .s6{
     top: -40%;
     left: -45%;
 }
-section.hero header .container .events .s7{
-    width: 7px;
-    height: 7px;
-    border-radius: 50%;
+section.hero header .container .events .s6:before{
+    content: '';
+    height: 2px;
+    width: 95px;
     background: white;
     position: absolute;
+    transform: rotate(221deg);
+    top: 45px;
+    left: 3px;
+}
+section.hero header .container .events .s7{
     top: -55%;
     left: -75%;
 }
-
-
+section.hero header .container .events .s7:before{
+    content: '';
+    height: 2px;
+    width: 40px;
+    background: white;
+    position: absolute;
+    transform: rotate(206deg);
+    top: 17px;
+    left: 14px;
+}
+/*-----------------------------*/
 section.hero header .container .gallery .s_stars{
     width: 200px;
     height: 200px;
@@ -321,74 +455,114 @@ section.hero header .container .gallery:hover .s_stars{
     transition: .6s;
 }
 section.hero header .container .gallery .s1{
-    width: 7px;
-    height: 7px;
-    border-radius: 50%;
-    background: white;
-    position: absolute;
     top: -45%;
     left: -20%;
 }
-section.hero header .container .gallery .s2{
-    width: 7px;
-    height: 7px;
-    border-radius: 50%;
+section.hero header .container .gallery .s1:before{
+    content: '';
+    height: 2px;
+    width: 72px;
     background: white;
     position: absolute;
+    transform: rotate(62deg);
+    top: 48px;
+    left: -9px;
+}
+section.hero header .container .gallery .s2{
     top: -15%;
     left: 50%;
 }
-section.hero header .container .gallery .s3{
-    width: 7px;
-    height: 7px;
-    border-radius: 50%;
+section.hero header .container .gallery .s2:before{
+    content: '';
+    height: 2px;
+    width: 56px;
     background: white;
     position: absolute;
+    transform: rotate(155deg);
+    top: 21px;
+    left: -61px;
+}
+section.hero header .container .gallery .s3{
     top: -50%;
     left: 75%;
 }
+section.hero header .container .gallery .s3:before{
+    content: '';
+    height: 2px;
+    width: 58px;
+    background: white;
+    position: absolute;
+    transform: rotate(125deg);
+    top: 39px;
+    left: -50px;
+}
 section.hero header .container .gallery .s4{
-     width: 7px;
-     height: 7px;
-     border-radius: 50%;
-     background: white;
-     position: absolute;
      top: -60%;
      left: 90%;
  }
-section.hero header .container .gallery .s5{
-    width: 7px;
-    height: 7px;
-    border-radius: 50%;
+section.hero header .container .gallery .s4:before{
+    content: '';
+    height: 2px;
+    width: 15px;
     background: white;
     position: absolute;
+    transform: rotate(144deg);
+    top: 13px;
+    left: -20px;
+}
+section.hero header .container .gallery .s5{
     top: 45%;
     left: -25%;
 }
-section.hero header .container .gallery .s6{
-    width: 7px;
-    height: 7px;
-    border-radius: 50%;
+section.hero header .container .gallery .s5:before{
+    content: '';
+    height: 2px;
+    width: 62px;
     background: white;
     position: absolute;
+    transform: rotate(146deg);
+    top: 28px;
+    left: -63px;
+}
+section.hero header .container .gallery .s5:after{
+    content: '';
+    height: 2px;
+    width: 60px;
+    background: white;
+    position: absolute;
+    transform: rotate(129deg);
+    top: -30px;
+    left: 0px;
+}
+section.hero header .container .gallery .s6{
     top: 70%;
     left: -60%;
 }
 section.hero header .container .gallery .s7{
-    width: 7px;
-    height: 7px;
-    border-radius: 50%;
-    background: white;
-    position: absolute;
     top: 40%;
     left: 35%;
 }
+section.hero header .container .gallery .s7:before{
+    content: '';
+    height: 2px;
+    width: 50px;
+    background: white;
+    position: absolute;
+    transform: rotate(52deg);
+    top: -27px;
+    left: -45px;
+}
+section.hero header .container .gallery .s7:after{
+    content: '';
+    height: 2px;
+    width: 122px;
+    background: white;
+    position: absolute;
+    transform: rotate(54deg);
+    top: 63px;
+    left: -12px;
+}
 section.hero header .container .gallery .s8{
-     width: 7px;
-     height: 7px;
-     border-radius: 50%;
-     background: white;
-     position: absolute;
      top: 100%;
      left: 80%;
  }
