@@ -16,8 +16,7 @@ a{
     text-decoration: none;
 }
 section.hero header .container{
-    background: cornflowerblue;
-    height: 700px;
+    height: 500px;
     position: relative;
     animation-name: evening;
     animation-duration: 1s;
@@ -38,19 +37,40 @@ section.hero header .container .sun{
 
 }
 section.hero header .container .moon{
+    font-size: 0px;
     width: 140px;
     height: 140px;
     background: white;
     border-radius: 50%;
     position: absolute;
-    bottom: 0px;
-    left: 0px;
-    box-shadow: 0px 0px 10px 10px white;
-    transform: translate(-50%,100%);
+    box-shadow: 0px 0px 30px white;
     animation-name: moon;
-    animation-delay: .7s;
-    animation-duration: 1s;
+    animation-delay: .2s;
+    animation-duration: 2s;
     animation-fill-mode: forwards;
+    top: 10%;
+    left: 33%;
+    opacity: 0;
+    transition: 1s;
+}
+section.hero header .container .moon:hover{
+   transform: scale(1.5);
+    box-shadow: 0px 0px 90px 10px white;
+    transition: 1s;
+}
+section.hero header .container .meteor{
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: white;
+    position: absolute;
+    box-shadow: 0px 0px 0px white;
+    top: 0px;
+    right: 15%;
+    transform: translate(0px, -100%);
+    animation-name: meteor;
+    animation-duration: .3s;
+    animation-delay: 4s;
 }
 section.hero header .container .but{
     width: 15px;
@@ -112,6 +132,140 @@ section.hero header .container .s_stars .im{
     border-radius: 50%;
     background: white;
     position: absolute;
+    box-shadow: 0px 0px 15px 2px white;
+
+}
+section.hero header .container .s_stars .im:nth-child(2n){
+    animation-name: stars_color;
+    animation-delay: 2s;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+section.hero header .container .box{
+    position: absolute;
+    opacity: 0.1;
+    background: white;
+    border-radius: 15px;
+    cursor: pointer;
+    -moz-user-select: none;
+    z-index: 1;
+    padding: 10px 30px;
+}
+section.hero header .container .abox{
+    top: 50px;
+    left: -40px;
+}
+section.hero header .container .ebox{
+    top: -70px;
+    left: -20px;
+}
+section.hero header .container .gbox{
+    top: 0px;
+    left: 60px;
+}
+section.hero header .container .cbox{
+    top: 30px;
+    left: -150px;
+}
+section.hero header .container .about:hover .box{
+    opacity: 1;
+}
+section.hero header .container .gallery:hover .box{
+    opacity: 1;
+}
+section.hero header .container .events:hover .box{
+    opacity: 1;
+}
+section.hero header .container .contacts:hover .box{
+    opacity: 1;
+}
+section.hero header .container .box a{
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+}
+/*--------------------background stars----------------*/
+section.hero header .container .bg_stars .bgs{
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: white;
+    position: absolute;
+}
+section.hero header .container .bgs:nth-child(2n){
+     animation-name: bg_stars;
+     animation-delay: 1.5s;
+     animation-duration: 2s;
+     animation-iteration-count: infinite;
+     opacity: 0;
+}
+section.hero header .container .bgs:nth-child(2n+1){
+    animation-name: bg_stars;
+    animation-delay: 2s;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    opacity: 0;
+}
+section.hero header .container .bg_stars .bgs1{
+    top: 30%;
+    left: 60%;
+}
+section.hero header .container .bg_stars .bgs2{
+    top: 15%;
+    left: 50%;
+}
+section.hero header .container .bg_stars .bgs3{
+    top: 7%;
+    left: 70%;
+}
+section.hero header .container .bg_stars .bgs4{
+    top: 17%;
+    left: 85%;
+}
+section.hero header .container .bg_stars .bgs5{
+    top: 14%;
+    left: 90%;
+}
+section.hero header .container .bg_stars .bgs6{
+    top: 50%;
+    left: 90%;
+}
+section.hero header .container .bg_stars .bgs7{
+    top: 80%;
+    left: 80%;
+}
+section.hero header .container .bg_stars .bgs8{
+    top: 55%;
+    left: 70%;
+}
+section.hero header .container .bg_stars .bgs9{
+    top: 90%;
+    left: 65%;
+}
+section.hero header .container .bg_stars .bgs10{
+    top: 85%;
+    left: 40%;
+}
+section.hero header .container .bg_stars .bgs11{
+    top: 15%;
+    left: 25%;
+}
+section.hero header .container .bg_stars .bgs12{
+    top: 45%;
+    left: 20%;
+}
+section.hero header .container .bg_stars .bgs13{
+    top: 85%;
+    left: 10%;
+}
+section.hero header .container .bg_stars .bgs14{
+    top: 55%;
+    left: 5%;
+}
+section.hero header .container .bg_stars .bgs15{
+    top: 75%;
+    left: 12%;
 }
 /*--------------------constellation-------------------*/
 section.hero header .container .about .s_stars{
@@ -253,7 +407,7 @@ section.hero header .container .contacts .s_stars{
     height: 200px;
     position: relative;
     transition: .6s;
-    opacity: 0;
+    opacity: .5;
 }
 section.hero header .container .contacts:hover .s_stars{
     width: 200px;
@@ -275,6 +429,10 @@ section.hero header .container .contacts .s1:after{
     transform: rotate(105deg);
     top: -50px;
     left: -25px;
+    opacity: 0;
+}
+section.hero header .container .contacts:hover .s1:after{
+    opacity: .2;
 }
 section.hero header .container .contacts .s2{
      top: -70%;
@@ -289,6 +447,10 @@ section.hero header .container .contacts .s2:after{
     transform: rotate(75deg);
     top: 72px;
     left:-36px;
+    opacity: 0;
+}
+section.hero header .container .contacts:hover .s2:after{
+    opacity: .2;
 }
 section.hero header .container .contacts .s3:after{
     content: '';
@@ -299,6 +461,10 @@ section.hero header .container .contacts .s3:after{
     transform: rotate(11deg);
     top: -10px;
     left:-111px;
+    opacity: 0;
+}
+section.hero header .container .contacts:hover .s3:after{
+    opacity: .2;
 }
 section.hero header .container .contacts .s3{
     top: 20%;
@@ -317,6 +483,10 @@ section.hero header .container .contacts .s4:after{
     transform: rotate(97deg);
     top: 43px;
     left: -30px;
+    opacity: 0;
+}
+section.hero header .container .contacts:hover .s4:after{
+    opacity: .2;
 }
 section.hero header .container .contacts .s5{
     top: 60%;
@@ -331,6 +501,10 @@ section.hero header .container .contacts .s5:after{
     transform: rotate(84deg);
     top: -37px;
     left: -29px;
+    opacity: 0;
+}
+section.hero header .container .contacts:hover .s5:after{
+    opacity: .2;
 }
 /*------------------------*/
 section.hero header .container .events .s_stars{
@@ -338,7 +512,7 @@ section.hero header .container .events .s_stars{
     height: 200px;
     position: relative;
     transition: .6s;
-    opacity: 0;
+    opacity: .5;
 }
 section.hero header .container .events:hover .s_stars{
     opacity: 1;
@@ -357,6 +531,10 @@ section.hero header .container .events .s1:before{
     transform: rotate(78deg);
     top: -36px;
     left: -30px;
+    opacity: 0;
+}
+section.hero header .container .events:hover .s1:before{
+    opacity: .2;
 }
 section.hero header .container .events .s2{
     top: 70%;
@@ -371,6 +549,10 @@ section.hero header .container .events .s2:before{
     transform: rotate(13deg);
     top: -17px;
     left: -153px;
+    opacity: 0;
+}
+section.hero header .container .events:hover .s2:before{
+    opacity: .2;
 }
 section.hero header .container .events .s3{
     top: 70%;
@@ -385,6 +567,7 @@ section.hero header .container .events .s3:before{
     transform: rotate(37deg);
     top: -17px;
     left: -39px;
+    opacity: 0;
 }
 section.hero header .container .events .s3:after{
     content: '';
@@ -395,6 +578,13 @@ section.hero header .container .events .s3:after{
     transform: rotate(340deg);
     top: -15px;
     left: 13px;
+    opacity: 0;
+}
+section.hero header .container .events:hover .s3:before{
+     opacity: .2;
+ }
+section.hero header .container .events:hover .s3:after{
+    opacity: .2;
 }
 section.hero header .container .events .s4{
     top: 50%;
@@ -413,6 +603,10 @@ section.hero header .container .events .s5:before{
     transform: rotate(337deg);
     top: 32px;
     left: -122px;
+    opacity: 0;
+}
+section.hero header .container .events:hover .s5:before{
+    opacity: .2;
 }
 section.hero header .container .events .s6{
     top: -40%;
@@ -427,6 +621,10 @@ section.hero header .container .events .s6:before{
     transform: rotate(221deg);
     top: 45px;
     left: 3px;
+    opacity: 0;
+}
+section.hero header .container .events:hover .s6:before{
+    opacity: .2;
 }
 section.hero header .container .events .s7{
     top: -55%;
@@ -441,6 +639,10 @@ section.hero header .container .events .s7:before{
     transform: rotate(206deg);
     top: 17px;
     left: 14px;
+    opacity: 0;
+}
+section.hero header .container .events:hover .s7:before{
+    opacity: .2;
 }
 /*-----------------------------*/
 section.hero header .container .gallery .s_stars{
@@ -448,7 +650,7 @@ section.hero header .container .gallery .s_stars{
     height: 200px;
     position: relative;
     transition: .6s;
-    opacity: 0;
+    opacity: .5;
 }
 section.hero header .container .gallery:hover .s_stars{
     opacity: 1;
@@ -467,6 +669,10 @@ section.hero header .container .gallery .s1:before{
     transform: rotate(62deg);
     top: 48px;
     left: -9px;
+    opacity: 0;
+}
+section.hero header .container .gallery:hover .s1:before{
+    opacity: .2;
 }
 section.hero header .container .gallery .s2{
     top: -15%;
@@ -481,6 +687,10 @@ section.hero header .container .gallery .s2:before{
     transform: rotate(155deg);
     top: 21px;
     left: -61px;
+    opacity: 0;
+}
+section.hero header .container .gallery:hover .s2:before{
+    opacity: .2;
 }
 section.hero header .container .gallery .s3{
     top: -50%;
@@ -495,6 +705,10 @@ section.hero header .container .gallery .s3:before{
     transform: rotate(125deg);
     top: 39px;
     left: -50px;
+    opacity: 0;
+}
+section.hero header .container .gallery:hover .s3:before{
+    opacity: .2;
 }
 section.hero header .container .gallery .s4{
      top: -60%;
@@ -509,6 +723,10 @@ section.hero header .container .gallery .s4:before{
     transform: rotate(144deg);
     top: 13px;
     left: -20px;
+    opacity: 0;
+}
+section.hero header .container .gallery:hover .s4:before{
+    opacity: .2;
 }
 section.hero header .container .gallery .s5{
     top: 45%;
@@ -523,6 +741,7 @@ section.hero header .container .gallery .s5:before{
     transform: rotate(146deg);
     top: 28px;
     left: -63px;
+    opacity: 0;
 }
 section.hero header .container .gallery .s5:after{
     content: '';
@@ -533,6 +752,13 @@ section.hero header .container .gallery .s5:after{
     transform: rotate(129deg);
     top: -30px;
     left: 0px;
+    opacity: 0;
+}
+section.hero header .container .gallery:hover .s5:before{
+    opacity: .2;
+}
+section.hero header .container .gallery:hover .s5:after{
+    opacity: .2;
 }
 section.hero header .container .gallery .s6{
     top: 70%;
@@ -551,6 +777,7 @@ section.hero header .container .gallery .s7:before{
     transform: rotate(52deg);
     top: -27px;
     left: -45px;
+    opacity: 0;
 }
 section.hero header .container .gallery .s7:after{
     content: '';
@@ -561,15 +788,165 @@ section.hero header .container .gallery .s7:after{
     transform: rotate(54deg);
     top: 63px;
     left: -12px;
+    opacity: 0;
+}
+section.hero header .container .gallery:hover .s7:before{
+    opacity: .2;
+}
+section.hero header .container .gallery:hover .s7:after{
+    opacity: .2;
 }
 section.hero header .container .gallery .s8{
      top: 100%;
      left: 80%;
  }
+/*-------------------------------------------------------------*/
+section.hero .content .landscape{
+    width: 100%;
+    animation-name: evening;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    font-size: 0;
+}
+section.hero .content .landscape img{
+    width: 100%
+}
+
 @keyframes stars {
     0%{opacity: 0;
         box-shadow: 0px 0px 0px white;}
     100%{opacity: 1;
         box-shadow: 0px 0px 40px 6px white;}
+}
+@keyframes bg_stars  {
+    0%{opacity: 0.2}
+    10%{opacity: 0.2}
+    20%{opacity: 0.4}
+    30%{opacity: 0.6}
+    40%{opacity: 0.8}
+    50%{opacity: 1}
+    60%{opacity: 0.8}
+    70%{opacity: 0.6}
+    80%{opacity: 0.4}
+    90%{opacity: 0.2}
+    100%{opacity: 0.2}
+}
+@keyframes meteor {
+    0%{
+        top: 0%;
+        right: 15%;
+        opacity: .1;
+        box-shadow: 0px 0px 40px 10px white;
+    }
+    5%{
+        top: 2%;
+        right: 18%;
+
+    }
+    10% {
+        top: 4%;
+        right: 21%;
+        opacity: .1;
+    }
+    15% {
+        top: 6%;
+        right: 24%;
+    }
+    20% {
+        top: 8%;
+        right: 27%;
+        opacity: .2;
+    }
+    25%{
+         top: 11%;
+         right: 30%;
+
+     }
+    30% {
+        top: 14%;
+        right: 33%;
+        opacity: .3;
+        transform: scale(1.1);
+        box-shadow: 0px 0px 40px 10px white;
+    }
+    35% {
+         top: 17%;
+         right: 36%;
+     }
+    40% {
+        top: 21%;
+        right: 39%;
+        transform: scale(1.2);
+        box-shadow: 0px 0px 40px 10px white;
+        opacity: .4;
+    }
+    45% {
+         top: 25%;
+         right: 42%;
+     }
+    50% {
+          top: 30%;
+          right: 45%;
+        transform: scale(1.3);
+        box-shadow: 0px 0px 40px 10px white;
+        opacity: .5;
+      }
+    55% {
+        top: 35%;
+        right: 48%;
+    }
+    60%{
+        top: 41%;
+        right: 51%;
+        transform: scale(1.4);
+        box-shadow: 0px 0px 40px 10px white;
+        opacity: .6;
+    }
+    65% {
+         top: 47%;
+         right: 54%;
+     }
+    70% {
+        top: 54%;
+        right: 57%;
+        transform: scale(1.5);
+        box-shadow: 0px 0px 40px 12px white;
+        opacity: .7;
+    }
+    75% {
+         top: 61%;
+         right: 60%;
+        box-shadow: 0px 0px 40px 15px white;
+     }
+    80% {
+        top: 68%;
+        right: 63%;
+        transform: scale(1.6);
+        box-shadow: 0px 0px 40px 18px white;
+        opacity: .8;
+    }
+    85% {
+        top: 75%;
+        right: 66%;
+        box-shadow: 0px 0px 40px 21px white;
+    }
+    90% {
+        top: 83%;
+        right: 69%;
+        transform: scale(1.7);
+        box-shadow: 0px 0px 40px 24px white;
+        opacity: 1;
+    }
+    95% {
+        top: 91%;
+        right: 72%;
+        box-shadow: 0px 0px 40px 27px white;
+    }
+    100% {
+        top: 100%;
+        right: 75%;
+        transform: scale(1.8);;
+        box-shadow: 0px 0px 40px 30px white;
+    }
 }
 
